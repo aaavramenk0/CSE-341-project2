@@ -19,11 +19,11 @@ exports.createRecipe = (req, res) => {
 exports.getAll = (req, res) => {
 Recipe.find({})
     .then((data) => {
-    res.send(data);
+      res.send(data);
     })
     .catch((err) => {
     res.status(500).send({
-        message: err.message || 'Some error occurred while retrieving recipes.'
+      message: err.message || 'Some error occurred while retrieving recipes.'
     });
     });
 };
@@ -32,11 +32,11 @@ exports.getRecipe = (req, res) => {
 const _id = req.params._id;
 Recipe.find({ _id: _id })
     .then((data) => {
-    res.send(data);
+      res.send(data);
     })
     .catch((err) => {
     res.status(500).send({
-        message: err.message || 'Some error occurred while retrieving recipe.'
+      message: err.message || 'Some error occurred while retrieving recipe.'
     });
     });
 };
