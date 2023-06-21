@@ -7,7 +7,7 @@ const doc = {
     },
     // host: 'cse341-ipg5.onrender.com/',
     // schemes: ['https'],
-    host: 'localhost:8080/',
+    host: 'localhost:8080',
     schemes: ['http'],
 };
 
