@@ -5,10 +5,9 @@
     "description": "API for the recipe web application by Oleksandr Avramenko",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
-  "basePath": "/",
+  "host": "cse341-project2-sqhr.onrender.com/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {

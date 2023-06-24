@@ -5,10 +5,10 @@ const doc = {
         title: 'My API',
         description: 'API for the recipe web application by Oleksandr Avramenko',
     },
-    // host: 'cse341-ipg5.onrender.com/',
-    // schemes: ['https'],
-    host: 'localhost:8080',
-    schemes: ['http'],
+    host: 'cse341-project2-sqhr.onrender.com',
+    schemes: ['https'],
+    // host: 'localhost:8080',
+    // schemes: ['http'],
 };
 
 const outputFile = './swagger.json';

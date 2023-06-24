@@ -64,8 +64,7 @@ module.exports.updateRecipe = async (req, res) => {
       return;
     }
 
-    Recipe.findOne({ _id: _id }).then(function (err, recipe) {
-      recipe.name = req.params.name;
+    Recipe.findOne({ _id: _id }, function (err, recipe) {
       recipe.description = req.body.description;
       recipe.author = req.body.author;
       recipe.ingredients = req.body.ingredients;
@@ -74,6 +73,7 @@ module.exports.updateRecipe = async (req, res) => {
       recipe.nutrition = req.body.nutrition;
 
       recipe.save().then(function (err, result) {
+        
         if (err) {
           res.status(500).json(err || 'Some error occurred while updating the recipe.');
         } else {
