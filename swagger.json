@@ -5,9 +5,10 @@
     "description": "API for the recipe web application by Oleksandr Avramenko",
     "version": "1.0.0"
   },
-  "host": "cse341-project2-sqhr.onrender.com/",
+  "host": "localhost:8080",
+  "basePath": "/",
   "schemes": [
-    "https"
+    "https", "http"
   ],
   "paths": {
     "/api-docs": {
@@ -144,6 +145,20 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/authors/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
           },
           "500": {
             "description": "Internal Server Error"

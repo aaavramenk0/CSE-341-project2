@@ -58,13 +58,14 @@ module.exports.getRecipe = (req, res) => {
 // PUT request that retrieves recipe from a database by its ID
 module.exports.updateRecipe = async (req, res) => {
   try {
-    const _id = req.params._id;
-    if (!_id) {
+    const recipeId = req.params._id;
+    if (!recipeId) {
       res.status(400).send({ message: 'Invalid Recipe ID Entered' });
       return;
     }
-
-    Recipe.findOne({ _id: _id }, function (err, recipe) {
+     
+    Recipe.findOne({ _id: recipeId }, function (err, recipe) {
+      recipe._id = req.params.recipeId;
       recipe.description = req.body.description;
       recipe.author = req.body.author;
       recipe.ingredients = req.body.ingredients;
