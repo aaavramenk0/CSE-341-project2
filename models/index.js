@@ -8,5 +8,6 @@ db.mongoose = mongoose;
 db.url = dbConfig.url;
 db.recipe = require('./recipes.js')(mongoose);
 db.author = require('./authors.js')(mongoose);
+db.user = require('./users.js')(mongoose);
 
 module.exports = db;
