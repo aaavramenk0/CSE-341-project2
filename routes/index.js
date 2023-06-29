@@ -5,7 +5,7 @@ router.use('/', require('./swagger'));
 router.use('/recipes', require('./recipes'));
 router.use('/authors', require('./authors'));
 
-router.use('/login', require('./login'))
-router.use('/signup', require('./signup'))
+router.use('/user', require('./login'))
+router.use('/user', require('./signup'))
 
 module.exports = router;

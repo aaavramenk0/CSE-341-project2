@@ -164,9 +164,37 @@
             "description": "Internal Server Error"
           }
         }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       }
     },
-    "/login/login": {
+    "/user/login": {
       "post": {
         "description": "",
         "parameters": [
@@ -196,7 +224,7 @@
         }
       }
     },
-    "/signup/signup": {
+    "/user/signup": {
       "post": {
         "description": "",
         "parameters": [
