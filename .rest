@@ -1,12 +1,5 @@
-GET http://localhost:8080/recipes
-
-###
-GET http://localhost:8080/recipes/64923154a33e5fba7496249e
-
-###
 POST http://localhost:8080/recipes HTTP/1.1
 content-type: application/json
-
 {
     "imgUrl" : "https://www.budgetbytes.com/wp-content/uploads/2021/09/Honey-Sriracha-Tofu-close-500x500.jpg",
     "name" : "Honey Sriracha Tofu",
@@ -30,5 +23,12 @@ content-type: application/json
     }
 } 
 
-###
-PUT
+POST http://localhost:8080/authors HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Katie",
+  "companyName": "Budget Bytes",
+  "description": "Katie is Texas native and the food blogger behind KatieGikon.com where she shares simple, healthy-ish recipes for busy families and home cooks. As a cancer survivor, Katie’s goal is to share more recipes using whole foods and real ingredients! She enjoys practicing her food photography, spending time with her family and sharing her bubbly personality and food recipes on her YouTube channel.",
+  "photo": "https://www.budgetbytes.com/wp-content/uploads/2023/05/avatar_user_75428_1683571081-268x268.jpg"
+}

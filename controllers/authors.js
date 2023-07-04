@@ -9,7 +9,7 @@ module.exports.createAuthor = (req, res) => {
       res.status(400).send({ message: "Author name can not be empty!" });
       return
     }
-    const autor = new Author(req.body);
+    const author = new Author(req.body);
     author.save().then((data) => {
       console.log(data);
       res.status(200).send(data);
