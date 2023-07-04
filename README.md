@@ -39,8 +39,9 @@ Before running the MERN stack web API, ensure you have the following dependencie
 ```bash
 git clone https://github.com/aaavramenk0/CSE-341-project2
 cd CSE-341-project2
+```
 
-Install the dependencies:
+2. Install the dependencies:
 npm install
 
 ## Configuration
