@@ -9,10 +9,6 @@ This is a web API built using the MERN stack (MongoDB, Express.js, React.js, Nod
 4. [Installation](#installation)
 5. [Configuration](#configuration)
 6. [Usage](#usage)
-7. [API Endpoints](#api-endpoints)
-8. [Testing](#testing)
-9. [Contributing](#contributing)
-10. [License](#license)
 
 ## Introduction
 
@@ -50,7 +46,21 @@ npm install
 
 Create a .env file in the root directory and set the following environment variables:
 ```env
-PORT=8080
-MONGODB_URI=mongodb+srv://oleksandr:GYoqbqOY3alrNSdp@cluster0.a6ww3rn.mongodb.net/
-JWT_SECRET=GKXj2ai@P7@IX2v6Bl9kRiPg13iExrZ7@!Mwb128dX$%X3x!20
+PORT = 8080
+MONGODB_URI = mongodb+srv://oleksandr:GYoqbqOY3alrNSdp@cluster0.a6ww3rn.mongodb.net/
+JWT_SECRET = GKXj2ai@P7@IX2v6Bl9kRiPg13iExrZ7@!Mwb128dX$%X3x!20
 ```
+
+## Usage
+
+1. Create a swagger documentation to see all routes
+```bash
+npm run swagger
+```
+
+2. Start the server:
+```bash
+npm run start
+```
+
+The server will be running at http://localhost:8080/api-docs.
