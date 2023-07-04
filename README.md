@@ -42,11 +42,15 @@ cd CSE-341-project2
 ```
 
 2. Install the dependencies:
+```bash
 npm install
+```
 
 ## Configuration
 
 Create a .env file in the root directory and set the following environment variables:
+```env
 PORT=8080
 MONGODB_URI=mongodb+srv://oleksandr:GYoqbqOY3alrNSdp@cluster0.a6ww3rn.mongodb.net/
 JWT_SECRET=GKXj2ai@P7@IX2v6Bl9kRiPg13iExrZ7@!Mwb128dX$%X3x!20
+```
