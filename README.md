@@ -19,7 +19,7 @@ The MERN stack web API is designed to handle various HTTP requests and provide d
 - RESTful API endpoints for CRUD operations.
 - JSON Web Token (JWT) authentication.
 - Error handling and validation.
-- MongoDB as the database for storing data.
+- MongoDB as the database for storing data
 
 ## Prerequisites
 
