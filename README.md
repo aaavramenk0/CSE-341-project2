@@ -12,7 +12,7 @@ This is a web API built using the MERN stack (MongoDB, Express.js, React.js, Nod
 
 ## Introduction
 
-The MERN stack web API is designed to handle various HTTP requests and provide data to the front-end application. It uses MongoDB as its database, Express.js as the server framework, React.js for the client-side views, and Node.js as the runtime environment.
+The MERN stack web API is designed to handle various HTTP requests and provide data to the front-end application. It uses MongoDB as its database, Express.js as the server framework, React.js for the client-side views, and Node.js as the runtime environment
 
 ## Features
 
